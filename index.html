@@ -7,18 +7,17 @@
     <title>Número Primo</title>
 </head>
 <body class="min-h-screen flex items-center justify-center bg-gradient-to-r from-slate-50 to-slate-200 p-4">
-    <div>
-        <div>
-            <div>
-                <h1>Verificador de número primo</h1>
-                <p>Introduce un número entre 2 y 100</p>
+    <div class="w-full max-w-md bg-white rounded-3xl shadow-2xl border border-slate-200 p-6 sm:p-8 space-y-6 " >
+        <div class="text-center space-y-2">
+            <div class="text-4xl">🔢</div>
+                <h1 class="text-2xl sm:text-3xl font-bold text-slate-800">Verificador de número primo</h1>
+                <p class="text-slate-500 text-sm">Introduce un número entre 2 y 100</p>
             </div>
 
-            <input type="number" id="numero" min="2" max="100">
-            <button oncanplay="verificarPrimo()">Verificar</button>
+            <input type="number" id="numero" min="2" max="100" class="w-full p-4 rounded-2xl border border-x-slate-300 focus:ring-4 focus:ring-cyan-200 outline-none text-lg">
+            <button oncanplay="verificarPrimo()" class="w-full py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500  text-white font-semibold text-lg hover:scale-[1.02] active:scale-95 transition ">Verificar</button>
 
-            <div id="resultado"></div>
-        </div>
+        <div id="resultado" class="text-center text-lg font-semibold p-4 min-h-[60px] flex items-center justify-center rounded-2xl border"></div>
     </div>
     <script src="app.js"></script>
 </body>
