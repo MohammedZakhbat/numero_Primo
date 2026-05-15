@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +13,11 @@
                 <h1 class="text-2xl sm:text-3xl font-bold text-slate-800">Verificador de número primo</h1>
                 <p class="text-slate-500 text-sm">Introduce un número entre 2 y 100</p>
             </div>
-
             <input type="number" id="numero" min="2" max="100" class="w-full p-4 rounded-2xl border border-x-slate-300 focus:ring-4 focus:ring-cyan-200 outline-none text-lg">
-            <button oncanplay="verificarPrimo()" class="w-full py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500  text-white font-semibold text-lg hover:scale-[1.02] active:scale-95 transition ">Verificar</button>
+            <button onclick="verificarPrimo()" class="w-full py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500  text-white font-semibold text-lg hover:scale-[1.02] active:scale-95 transition ">Verificar</button>
 
         <div id="resultado" class="text-center text-lg font-semibold p-4 min-h-[60px] flex items-center justify-center rounded-2xl border"></div>
     </div>
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
